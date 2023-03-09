@@ -19,3 +19,7 @@ jobs:
         MIDDLE_NAME: TRAIN
         LAST_NAME: ASSASSIN
       run: echo $FIRST_NAME $MIDDLE_NAME $LAST_NAME
+    - name: my second step
+      if: success()
+      run: echo "The previous step has finished successfully"
+    
